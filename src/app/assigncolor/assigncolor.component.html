@@ -1,0 +1,19 @@
+
+<h1>Choose Any Color</h1>
+<label for="">Choose a color :</label>
+<select name="" id="" [(ngModel)]="selvalue">
+    <option value="red">RED</option>
+    <option value="yellow">YELLOW</option>
+    <option value="green">GREEN</option>
+    <option value="blue">BLUE</option>
+    <option value="pink">PINK</option>
+</select><br><br>
+<div [ngSwitch]="selvalue">
+    <div *ngSwitchCase="'red'" [style.background-color]="selvalue">This is a RED Color</div>
+    <div *ngSwitchCase="'yellow'" [style.background-color]="selvalue">This is a YELLOW Color </div>
+    <div *ngSwitchCase="'green'" [style.background-color]="selvalue">This is a GREEN Color </div>
+    <div *ngSwitchCase="'blue'" [style.background-color]="selvalue">This is a BLUE Color </div>
+    <div *ngSwitchCase="'pink'" [style.background-color]="selvalue">This is a PINK Color </div>
+</div>
+
+

@@ -1,0 +1,17 @@
+<h2>Student Details</h2>
+<table  cellpadding="5px">
+    <tr>
+        <th >NAME</th>
+        <th >AGE</th>
+        <th >CONTACT</th>
+        <th>PLACE </th>
+        <th>Delete Row</th>
+    </tr>
+    <tr *ngFor="let st of student index as x ">
+        <td>{{st['name']}}</td>
+        <td>{{st['age']}}</td>
+        <td>{{st['contact']}}</td>
+        <td>{{st['place']}}</td>
+        <td><button (click)="delete(x)">Delete</button></td>
+     </tr>
+</table>

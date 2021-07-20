@@ -1,0 +1,21 @@
+
+.mat-form-field ,.mat-label{
+    width: 40%;
+    background-color: white;
+    
+}
+
+.mat-toolbar{
+    color: white;
+    background-color: rgb(108, 108, 112);
+    padding: 40px;
+    margin-top: 40px;
+    width: 40%;
+    
+}
+/* .mat-radio-group{
+    margin-left: 30%; */
+/* } */
+.mat-raised-button{
+    margin-left: 10px;
+}

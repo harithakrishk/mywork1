@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="row">
+        
+        <table mat-table >
+           
+          <tr>
+              <td ><mat-toolbar>
+                      <span>User Application</span>
+                    </mat-toolbar>
+              </td>
+          </tr>
+          <tr><td>
+            <mat-form-field appearance="fill">
+                <mat-label>First Name </mat-label>
+                <input matInput required [(ngModel)]="regs.f_name">
+              </mat-form-field>
+          </td></tr>
+          <tr><td>
+            <mat-form-field appearance="fill">
+                <mat-label>Last Name </mat-label>
+                <input matInput required [(ngModel)]="regs.l_name">
+            </mat-form-field>
+          </td></tr>
+          <tr><td>
+            <mat-form-field appearance="fill">
+                <mat-label>Date Of Birth </mat-label>
+                <input type="date" matInput required [(ngModel)]="regs.dob">
+              </mat-form-field>
+          </td></tr>
+          <tr><td>
+                <mat-radio-group aria-label="Select an option" [(ngModel)]="regs.gender">
+                <mat-radio-button value="male ">Male </mat-radio-button>
+                <mat-radio-button value="female ">Female</mat-radio-button>
+              </mat-radio-group>
+          </td></tr>
+          <tr>
+              <td>
+                <mat-form-field appearance="fill">
+                    <mat-label>Email </mat-label>
+                    <input type="email" matInput required [(ngModel)]="regs.email" >
+                </mat-form-field>
+                  
+              </td>
+          </tr>
+          <tr>
+              <td>
+                <button mat-raised-button color="accent" (click)="insertdata()">Register</button>
+                <button mat-raised-button color="warn"> Cancle</button>
+              </td>
+          </tr><br><br>
+     {{message}}
+       </table>
+    
+    </div>
+</div>
+<!-- <form action=" ">
+    <p>
+        <mat-toolbar>
+          <span>User Application</span>
+        </mat-toolbar>
+      </p>
+      
+      <mat-form-field appearance="fill">
+        <mat-label>Input</mat-label>
+        <input matInput>
+      </mat-form-field>
+      </form> -->
