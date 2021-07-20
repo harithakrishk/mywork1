@@ -10,8 +10,11 @@
     background-color: rgb(108, 108, 112);
     padding: 40px;
     margin-top: 40px;
-    width: 40%;
+    width: 50%;
     
+}
+.mat-form-field{
+    width: 50%;
 }
 /* .mat-radio-group{
     margin-left: 30%; */
